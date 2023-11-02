@@ -1,0 +1,13 @@
+.CardList{
+    padding: 10px;
+    column-count: 3;
+    column-gap: 7px;
+    column-width: 150px;
+    margin: auto;
+    width: 100%;
+}
+
+.CardList img{
+    margin: 5px auto 5px;
+    width: 100%;
+}

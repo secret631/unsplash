@@ -1,0 +1,50 @@
+.Hero{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Hero img{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+
+.Hero input{
+    padding: 15px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+.Hero button{
+    padding: 15px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+
+.Hero p{
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 32px;
+    /* background: rgba(255, 255, 255, 0.8); */
+    color: black;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+
+}
