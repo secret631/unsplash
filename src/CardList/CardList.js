@@ -5,7 +5,6 @@ import './CardList.css'
 import HeroBlock from '../Hero/HeroBlock';
 
 
-const arr =()=>{}
 
 const CardList = () => {
 
