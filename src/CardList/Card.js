@@ -13,7 +13,6 @@ const Card = (props)=>{
 }
 
 
-12313231
 
 
 //Class Component
