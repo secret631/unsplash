@@ -9,7 +9,7 @@ import HeroBlock from '../Hero/HeroBlock';
 const CardList = () => {
 
     const [Photos, setPhotos] = useState(null)
-    const [text, settext] = useState('book')
+    const [text, settext] = useState('random')
 
     useEffect(() => {
         axios.get('https://api.unsplash.com/search/photos', {

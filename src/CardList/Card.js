@@ -1,13 +1,21 @@
 import React from 'react';
 import './Card.css'
+import UseProgressiveImage from '../Hoc/UseProgressiveImage';
 
 
 
 
 const Card = (props)=>{
+    console.log(props.OBG.urls)
+
+
+    const[src, {blur}]=UseProgressiveImage(props.OBG.urls.thumb , props.OBG.urls.full)
+
     return(
         <div className='CardImage'>
-            <img src={props.OBG.urls.regular} />
+            <img src={src}  style={{filter: blur? "(5px)" : "none" ,
+             transition:blur? "none" : "filter 0.3 ease-out"}} />
+
         </div>
     )
 }
