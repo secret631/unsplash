@@ -13,6 +13,7 @@
 }
 
 .Hero input{
+    position: absolute;
     padding: 15px;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.3);
@@ -22,29 +23,4 @@
     left: 50%;
     transform: translate(-50% , -50%);
     text-align: center;
-}
-.Hero button{
-    padding: 15px;
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.8);
-    color: black;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    text-align: center;
-}
-
-.Hero p{
-    padding: 15px;
-    border-radius: 15px;
-    font-size: 32px;
-    /* background: rgba(255, 255, 255, 0.8); */
-    color: black;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    text-align: center;
-
 }
