@@ -32,7 +32,7 @@ const HeroBlock = (props) => {
         SearchSubmit
       }
         sx={{ ml: 1, flex: 1 }}
-        placeholder="Search Google Maps"
+        placeholder="search your product"
         inputProps={{ 'aria-label': 'search your product' }}
       />
       <IconButton  type="button" sx={{ p: '10px' }} aria-label="search">

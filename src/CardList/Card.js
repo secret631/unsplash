@@ -9,7 +9,7 @@ const Card = (props)=>{
     console.log(props.OBG.urls)
 
 
-    const[src, {blur}]=UseProgressiveImage(props.OBG.urls.thumb , props.OBG.urls.full)
+    const[src, {blur}]=UseProgressiveImage(props.OBG.urls.regular , props.OBG.urls.full)
 
     return(
         <div className='CardImage'>

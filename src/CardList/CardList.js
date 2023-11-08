@@ -3,6 +3,9 @@ import Card from './Card';
 import axios from 'axios';
 import './CardList.css'
 import HeroBlock from '../Hero/HeroBlock';
+import Typography from '@mui/material/Typography';
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
 
 
 
@@ -10,10 +13,11 @@ const CardList = () => {
 
     const [Photos, setPhotos] = useState(null)
     const [text, settext] = useState('random')
+    const [PageNumber, setPageNumber] = useState(1)
 
     useEffect(() => {
         axios.get('https://api.unsplash.com/search/photos', {
-            params: { query: text, per_page: 20 },
+            params: { query: text, per_page: 20, page: PageNumber },
             headers: {
                 Authorization: 'Client-ID 8GMrSwACBn1O6TtOVIrzpWDNqkeLaEGMyW5-A5Y6eZ0'
             }
@@ -22,7 +26,7 @@ const CardList = () => {
             setPhotos(Response.data.results)
         })
 
-    }, [text])
+    }, [text, PageNumber])
 
 
     const ImagesList = Photos?.map(obj => {
@@ -32,22 +36,31 @@ const CardList = () => {
 
     })
 
+    const handleChange = (event, value) => {
+       setPageNumber(value)
+    };
 
-    const SearchSubmitClick =(keyword)=>{
+    const SearchSubmitClick = (keyword) => {
         settext(keyword)
     }
 
     console.log(Photos)
 
-    
     return (
         <div>
             <HeroBlock submitHandler={SearchSubmitClick} />
 
             <div className="CardList ">
                 {ImagesList}
-
             </div>
+            <div className='Pagination'>
+                    <Stack spacing={2}>
+                        <Typography>Page: {PageNumber}</Typography>
+                        <Pagination count={10} page={PageNumber} onChange={handleChange} />
+                    </Stack>
+
+                </div>
+
         </div>
 
 
@@ -106,7 +119,7 @@ export default CardList;
 
 //             <div className="ui grid ">
 
-//           {this.RenderCardHandeler()}    
+//           {this.RenderCardHandeler()}
 
 //             </div>
 
