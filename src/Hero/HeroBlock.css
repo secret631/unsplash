@@ -12,11 +12,11 @@
 
 }
 
-.Hero input{
+.Form_input{
     position: absolute;
     padding: 15px;
     border-radius: 15px;
-    background: rgba(255, 255, 255, 0.3);
+    /* background: rgba(255, 255, 255, 0.3); */
     color: black;
     position: absolute;
     top: 50%;

@@ -1,5 +1,5 @@
 .Toolbar {
-    background-color: rgb(60, 59, 63);
+    background-color: rgb(94, 44, 245);
     width: 100%;
     height: 56px;
     position: fixed;
@@ -27,6 +27,7 @@
 
 .Navigation_Items ul li a {
     text-decoration: none;
+    color: bisque;
 }
 
 .Navigation_Items ul li a:hover {
@@ -43,6 +44,7 @@
 .logo img {
     width: 48px;
     height: 48px;
+
 }
 
 .berger {
