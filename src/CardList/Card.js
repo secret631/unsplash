@@ -1,19 +1,26 @@
 import React from 'react';
 import './Card.css'
 import UseProgressiveImage from '../Hoc/UseProgressiveImage';
+import { useNavigate } from "react-router-dom";
+
 
 
 
 
 const Card = (props)=>{
-    console.log(props.OBG.urls)
 
+    const navigate = useNavigate()
+    const HandheProductRoute = () => {
+        navigate('/Product')
+    }
+
+    console.log(props.OBG)
 
     const[src, {blur}]=UseProgressiveImage(props.OBG.urls.regular , props.OBG.urls.full)
 
     return(
         <div className='CardImage'>
-            <img src={src}  style={{filter: blur? "(5px)" : "none" ,
+            <img src={src} onClick={HandheProductRoute} style={{filter: blur? "(5px)" : "none" ,
              transition:blur? "none" : "filter 0.3 ease-out"}} />
 
         </div>

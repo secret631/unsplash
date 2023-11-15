@@ -42,6 +42,8 @@
 }
 
 .logo img {
+   
+    text-align: center;
     width: 48px;
     height: 48px;
 
@@ -49,6 +51,7 @@
 
 .berger {
     visibility: hidden;
+    margin-right: 5px;
 }
 
 
