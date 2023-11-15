@@ -3,7 +3,8 @@ import CardList from './CardList/CardList';
 import Toolbar from './Toolbar/Toolbar';
 import SideDrawer from './SideDrawer/SideDrawer';
 import BackDrop from './BackDrop/BackDrop';
-import axios from 'axios';
+import { Route, Routes } from 'react-router-dom';
+import ProductPage from './ProductPage/ProductPage';
 
 const App = () => {
     const [isOpen, setisOpen] = useState(false)
@@ -24,7 +25,7 @@ const App = () => {
 
     //8GMrSwACBn1O6TtOVIrzpWDNqkeLaEGMyW5-A5Y6eZ0
 
-   
+
 
 
 
@@ -35,10 +36,17 @@ const App = () => {
             <Toolbar OpenHandler={OpenHandler} />
             {BackDropHandler()}
 
-
             <main style={{ marginTop: '76px' }}>
                 <CardList />
+                
 
+                <div >
+                    <Routes>
+                        <Route path='/Product' element={<ProductPage />} />
+
+                    </Routes>
+
+                </div>
             </main>
 
 
