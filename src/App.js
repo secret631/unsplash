@@ -1,58 +1,25 @@
-import React, { useState } from 'react';
-import CardList from './CardList/CardList';
-import Toolbar from './Toolbar/Toolbar';
-import SideDrawer from './SideDrawer/SideDrawer';
-import BackDrop from './BackDrop/BackDrop';
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import Home from './Home';
 import ProductPage from './ProductPage/ProductPage';
 
 const App = () => {
-    const [isOpen, setisOpen] = useState(false)
 
-    const OpenHandler = () => {
-        setisOpen(true)
-    }
+return (
 
-    const CloseHandler = () => {
-        setisOpen(false)
-    }
-    const BackDropHandler = () => {
-        if (isOpen == true) {
-            return (<BackDrop CloseHandler={CloseHandler} />)
 
-        }
-    }
+    <div >
+        <Routes>
+            <Route path='/' element={<Home/>} />
+            <Route path='/ProductDetails' element={<ProductPage/>} />
+        </Routes>
 
-    //8GMrSwACBn1O6TtOVIrzpWDNqkeLaEGMyW5-A5Y6eZ0
+    </div>
 
 
 
 
-
-
-    return (
-        <div>
-            <SideDrawer ISOPEN={isOpen} />
-            <Toolbar OpenHandler={OpenHandler} />
-            {BackDropHandler()}
-
-            <main style={{ marginTop: '76px' }}>
-                <CardList />
-                
-
-                <div >
-                    <Routes>
-                        <Route path='/Product' element={<ProductPage />} />
-
-                    </Routes>
-
-                </div>
-            </main>
-
-
-
-
-        </div>
+        
     )
 }
 
