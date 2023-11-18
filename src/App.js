@@ -11,7 +11,7 @@ return (
     <div >
         <Routes>
             <Route path='/' element={<Home/>} />
-            <Route path='/ProductDetails' element={<ProductPage/>} />
+            <Route path='/ProductDetails/:Id' element={<ProductPage/>} />
         </Routes>
 
     </div>

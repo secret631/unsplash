@@ -17,7 +17,7 @@ const Card = (props) => {
 
     return (
         <div >
-            <Link to={{ pathname: '/ProProductDetails' }} state={props.OBG.id}>
+            <Link to={{ pathname:`/ProductDetails/${props.OBG.id}` }}>
 
                 <img src={src}
                     style={{
