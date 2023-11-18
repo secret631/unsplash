@@ -1,0 +1,17 @@
+.ProductImage img{
+  margin-right: 20%;
+  margin-left: 20%;
+  width: 50%;
+  height: 80%;
+
+}
+.Profile {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    width: 50%;
+    gap: 10px;
+}
+.Profile img{
+    border-radius: 50%;
+}
