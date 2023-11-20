@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import './ProductPage.css'
 import { useLocation, useParams } from "react-router-dom";
 import axios from "axios";
-import like from './like.png'
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import AddIcon from '@mui/icons-material/Add';
+
 
 const ProductPage = () => {
     const params = useParams()
@@ -23,72 +25,36 @@ const ProductPage = () => {
     }, [])
 
     return (
-        <div className>
-            <div className="Profile">
-                <div className>
+        <div>
+
+            <div className="Profile_Header">
+                <div className="Profile-Access">
                     <div className="Profile_img">
                         <img src={photo?.user.profile_image.medium} />
                     </div>
 
-                    <div className="name_user">
-                        <div className="name_user">
-                            <a>{photo?.user.name}</a>
-                        </div>
-                       
-                       
-                        <div>
-                            <a>Available for hire</a>
+                    <div className="Profile_name">
+                        <a>{photo?.user.name}</a>
+                        <a>{photo?.user.name}</a>
 
-                        </div>
                     </div>
 
                 </div>
 
-                <div className="like_user">
-                    <button><img src={like} /></button>
-                    <button>+</button>
+                <div className="Profile_Sammery">
+                    <FavoriteIcon />
+                    <AddIcon />
+                    <a><button>Download</button> </a>
                 </div>
-            </div>
 
+            </div>
 
             <div className="ProductImage">
                 <img src={photo?.urls.regular} />
             </div>
 
 
-            <div className="slide3">
-                <div className="Views">
-                    <h3>Views</h3>
-                </div>
-                <div className="Downloads">
-                    <h3>Downloads</h3>
-                </div>
-                <div className="Featured in">
-                    <h3>Featured in</h3>
-                </div>
-
-                <div>
-                    <button>share</button>
-                </div>
-                <div>
-                    <button>info</button>
-                </div>
-                <div>
-                    <button>...</button>
-                
-                
-                </div>
-
-
-            </div>
-
-
-
-
         </div>
-
-
-
     )
 }
 export default ProductPage
