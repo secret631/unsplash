@@ -26,7 +26,7 @@ const ProductPage = () => {
 
     return (
         <div>
-
+            {/* Profile_Header */}
             <div className="Profile_Header">
                 <div className="Profile-Access">
                     <div className="Profile_img">
@@ -49,11 +49,41 @@ const ProductPage = () => {
 
             </div>
 
+
+            {/* ProductImage */}
             <div className="ProductImage">
                 <img src={photo?.urls.regular} />
             </div>
 
+            {/* share-info */}
+            <div className="share-info">
 
+                <div className="veiws">
+                    <h3>Veiws</h3>
+                    <span>{photo?.likes}</span>
+                </div>
+
+
+                <div className="Downloads">
+                    <h3>Downloads</h3>
+                    <span>{photo?.downloads}</span>
+                </div>
+
+
+                <div className="btn_share-info">
+                    <button >share</button>
+                    <button>info</button>
+                    <button>...</button>
+                </div>
+
+
+
+            </div>
+
+
+            <div className="tags">
+                              
+            </div>
         </div>
     )
 }
