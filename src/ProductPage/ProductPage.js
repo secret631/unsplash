@@ -57,16 +57,18 @@ const ProductPage = () => {
 
             {/* share-info */}
             <div className="share-info">
+                <div className="veiws-Downloads">
+                    <div className="veiws">
+                        <h3>Veiws</h3>
+                        <span>{photo?.likes}</span>
+                    </div>
 
-                <div className="veiws">
-                    <h3>Veiws</h3>
-                    <span>{photo?.likes}</span>
-                </div>
 
+                    <div className="Downloads">
+                        <h3>Downloads</h3>
+                        <span>{photo?.downloads}</span>
+                    </div>
 
-                <div className="Downloads">
-                    <h3>Downloads</h3>
-                    <span>{photo?.downloads}</span>
                 </div>
 
 
@@ -82,7 +84,7 @@ const ProductPage = () => {
 
 
             <div className="tags">
-                              
+
             </div>
         </div>
     )

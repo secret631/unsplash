@@ -1,39 +1,64 @@
-.Profile_Header{
+.Profile_Header {
   display: gride;
   grid-template-columns: repeat(2, 1fr);
   padding: 10px;
 }
-.Profile-Access{
+
+.Profile-Access {
   display: flex;
   align-items: center;
 }
-.Profile_img img{
+
+.Profile_img img {
   height: 48px;
   width: 48px;
   border-radius: 50%;
 }
-.Profile_name a{
+
+.Profile_name a {
   padding-left: 10px;
   display: block
 }
-.Profile_Sammery{
+
+.Profile_Sammery {
   display: flex;
   align-items: center;
 }
-.Profile_Sammery button{
+
+.Profile_Sammery button {
   background-color: white;
 
 }
 
 
 
-
-
-.ProductImage{
+.ProductImage {
   display: flex;
   justify-content: center;
 }
-.ProductImage img{
-  max-width: 100%;
-  height: auto;
+
+.ProductImage img {
+  max-width: 910px;
+  min-width: 768px;
+  max-height: 778px;
+}
+
+.share-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.veiws-Downloads {
+  display: flex;
+  align-items: center;
+}
+
+.Downloads {
+  margin-left: 20px;
+}
+
+.btn_share-info button {
+  margin-right: 5px;
 }
