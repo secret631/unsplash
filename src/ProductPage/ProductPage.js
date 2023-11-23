@@ -34,17 +34,19 @@ const ProductPage = () => {
                     </div>
 
                     <div className="Profile_name">
-                        <a>{photo?.user.name}</a>
-                        <a>{photo?.user.name}</a>
+                        <p>{photo?.user.name}</p>
+                        <a>{photo?.user.for_hire ? <span>Available for hire</span> : <span>{null}</span> }</a>
 
                     </div>
 
                 </div>
 
                 <div className="Profile_Sammery">
+                   
+                   <a><button>Download</button> </a>
+                   <AddIcon />
                     <FavoriteIcon />
-                    <AddIcon />
-                    <a><button>Download</button> </a>
+                 
                 </div>
 
             </div>

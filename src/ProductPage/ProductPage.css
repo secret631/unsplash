@@ -1,7 +1,8 @@
 .Profile_Header {
   display: gride;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   padding: 10px;
+  margin: 20px;
 }
 
 .Profile-Access {
@@ -15,18 +16,30 @@
   border-radius: 50%;
 }
 
-.Profile_name a {
-  padding-left: 10px;
+.Profile_name {
+  padding-left: 20px;
   display: block
+}
+.Profile_name p{
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 
 .Profile_Sammery {
   display: flex;
+  gap: 5px;
   align-items: center;
+  direction: rtl;
+  margin-right: 10px;
+
 }
+
 
 .Profile_Sammery button {
   background-color: white;
+  font-size: 16px;
+  padding: 7px;
+
 
 }
 
@@ -60,5 +73,7 @@
 }
 
 .btn_share-info button {
+  font-size: 16px;
   margin-right: 5px;
+  padding: 5px;
 }
